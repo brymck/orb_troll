@@ -16,11 +16,11 @@ lein repl
 And in the REPL:
 
 ```clojure
-(load-file "orb_troll.clj")
-(simulate ra)
-;; => 0.54473
+user=> (load-file "orb_troll.clj")
+user=> (simulate ra)
+0.54473
 user=> (simulate ra mastering vampire)
-;; => 0.92155
+0.92155
 ```
 
 License
