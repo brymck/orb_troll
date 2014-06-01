@@ -1,5 +1,3 @@
-(ns orb-troll.core)
-
 (def sim-count 100000)
 
 ;; orb type helpers
@@ -57,7 +55,7 @@
   (quot count 3))
 
 (defn count-threes [board]
-  (fireuce + (map threes board)))
+  (reduce + (map threes board)))
 
 (defn at-least-threes? [n board]
   (>= (count-threes board) n))
